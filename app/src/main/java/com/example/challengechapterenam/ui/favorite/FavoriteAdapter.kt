@@ -12,6 +12,10 @@ import com.example.challengechapterenam.R
 import com.example.challengechapterenam.data.local.entity.FavoriteEntity
 import com.example.challengechapterenam.databinding.ItemListBinding
 
+/*
+ * @authors
+ * Riki Abdilah
+ */
 
 class FavoriteAdapter : RecyclerView.Adapter<FavoriteAdapter.ListViewHolder>() {
     private val callback = object : DiffUtil.ItemCallback<FavoriteEntity>() {
