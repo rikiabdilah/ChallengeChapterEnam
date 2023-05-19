@@ -12,6 +12,10 @@ import com.example.challengechapterenam.R
 import com.example.challengechapterenam.data.remote.model.ResultsItem
 import com.example.challengechapterenam.databinding.ItemListBinding
 
+/*
+ * @authors
+ * Riki Abdilah
+ */
 class HomeAdapter : RecyclerView.Adapter<HomeAdapter.ListViewHolder>() {
     private val callback = object : DiffUtil.ItemCallback<ResultsItem>() {
         override fun areItemsTheSame(

@@ -3,12 +3,15 @@ package com.example.challengechapterenam.ui.login
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.challengechapterenam.data.repository.NetworkRepository
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-
-class LoginViewModel : ViewModel() {
+@HiltViewModel
+class LoginViewModel @Inject constructor(private val networkRepository: NetworkRepository) : ViewModel() {
     private val _login = MutableLiveData<String>()
     val login: LiveData<String> = _login
 

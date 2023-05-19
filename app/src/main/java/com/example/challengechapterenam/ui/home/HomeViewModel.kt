@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject constructor(private val networkRepository: NetworkRepository): ViewModel() {
+class  HomeViewModel @Inject constructor(private val networkRepository: NetworkRepository): ViewModel() {
     private val _movie = MutableLiveData<MovieResponse>()
     val movie: LiveData<MovieResponse> = _movie
 
